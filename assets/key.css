@@ -1,0 +1,52 @@
+h1
+{
+    padding-top: 20pt;
+    color: rgb(44, 62, 80);
+}
+
+h2
+{
+    color: rgb(44, 62, 80);
+}
+
+sub
+{
+    vertical-align: sub;
+    font-size: smaller;
+}
+
+sup
+{
+    vertical-align: super;
+    font-size: smaller;
+}
+
+i
+{
+    color:rgb(44, 62, 80);
+}
+
+em
+{
+    color:rgb(44, 62, 80);
+}
+
+strong
+{
+    color:rgb(44, 62, 80);
+}
+
+.key:hover
+{
+    color: white;
+    background-color: darkgray;
+}
+
+.our_markdown
+{
+    display: flex;
+    justify-content: center;
+}
+
+
+
