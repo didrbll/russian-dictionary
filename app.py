@@ -6,8 +6,10 @@ import plotly.express as px
 from pages import  startpage, about
 import atexit
 import os
-
 from connection import close_connection
+from dotenv import load_dotenv
+
+load_dotenv()
 
 app=dash.Dash(__name__, external_stylesheets=[dbc.themes.FLATLY])
 
@@ -39,5 +41,5 @@ def display_page(pathname):
 atexit.register(close_connection)
 
 if __name__ == "__main__":
-    port = int(os.environ.get('PORT', 8050))
+    port = int(os.getenv('PORT', 8050))
     app.run_server(host='0.0.0.0', port=port)
